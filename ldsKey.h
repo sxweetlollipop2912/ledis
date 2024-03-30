@@ -9,5 +9,6 @@
 struct ldsKey {
     std::string key;
     llist<ldsVal>::iterator val_iter;
-    std::chrono::system_clock::time_point updated_at;
+    std::optional<std::chrono::time_point<std::chrono::system_clock>> ttl = std::nullopt;
+    bool zombie = false;
 };
