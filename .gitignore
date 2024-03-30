@@ -1,3 +1,17 @@
+# .idea
+.idea/
+
+# .vscode
+.vscode/
+
+# CMake
+cmake-build-debug
+cmake-build-release
+
+# Others
+main.dSYM
+main
+
 # Prerequisites
 *.d
 
