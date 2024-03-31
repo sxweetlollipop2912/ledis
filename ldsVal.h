@@ -3,8 +3,7 @@
 #include <string>
 #include <cassert>
 #include <set>
-
-#include "linked_list.h"
+#include <list>
 
 #define STRING_T 0
 #define LIST_T 1
@@ -22,11 +21,11 @@ std::string *ldsValToStr(ldsVal val) {
     return (std::string *) val.ptr;
 }
 
-llist<std::string> *ldsValToList(ldsVal val) {
+std::list<std::string> *ldsValToList(ldsVal val) {
     if (val.type != LIST_T) {
         throw std::runtime_error("Attempt to convert non-list value to list");
     }
-    return (llist<std::string> *) val.ptr;
+    return (std::list<std::string> *) val.ptr;
 }
 
 std::set<std::string> *ldsValToSet(ldsVal val) {
