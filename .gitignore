@@ -1,5 +1,9 @@
+# runtime files
+*.snap
+
 # .idea
 .idea/
+build/
 
 # .vscode
 .vscode/

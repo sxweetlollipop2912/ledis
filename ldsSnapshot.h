@@ -16,7 +16,7 @@
 extern logger LOGGER;
 
 #define SNAPSHOT_FILENAME "ledis"
-#define SNAPSHOT_EXT ".snpsht"
+#define SNAPSHOT_EXT ".snap"
 
 const std::set MODIFIABLE_COMMANDS = {CMD_SSET, CMD_LPUSH, CMD_RPUSH, CMD_LPOP, CMD_RPOP, CMD_SADD, CMD_SREM, CMD_GDEL,
                                       CMD_GFLUSHDB};
