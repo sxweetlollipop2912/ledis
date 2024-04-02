@@ -10,16 +10,16 @@ using namespace httpserver;
 
 class dbQueryResource : public http_resource {
 private:
-    dbGate *dbGate;
+    dbGate *db;
 public:
-    explicit dbQueryResource(class dbGate *dbGate) : dbGate(dbGate) {}
+    explicit dbQueryResource(class dbGate *db) : db(db) {}
 
     std::shared_ptr<http_response> render_POST(const http_request &req) override {
         auto body = req.get_content();
         LOGGER.info("[REQUEST] Body: " + std::string(body));
 
         ldsRet ret{};
-        dbGate->parseAndExecute(std::string(body), ret);
+        db->parseAndExecute(std::string(body), ret);
 
         std::string resp;
         switch (ret.type) {

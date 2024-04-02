@@ -9,6 +9,8 @@
 #include <set>
 #include <fstream>
 #include <iostream>
+#include <cstring>
+#include <sys/wait.h>
 
 #include "ldsCmd.h"
 #include "logger.h"

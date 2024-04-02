@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <cstring>
 
 #define CMD_SSET 0
 #define CMD_SGET 1

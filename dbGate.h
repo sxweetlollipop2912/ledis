@@ -3,6 +3,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <string>
+#include <cstring>
 
 #include "ldsDb.h"
 #include "ldsSnapshot.h"
